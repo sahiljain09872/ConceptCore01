@@ -10,6 +10,8 @@ import userRoutes from './routes/api/user/index.js';
 import courseRoutes from './routes/api/course/index.js';
 import contactRoutes from './routes/api/contact/index.js';
 
+const frontendURL = process.env.FRONTEND_URL;
+
 dotenv.config();
 connectDB();
 
@@ -17,7 +19,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // Adjust this to your frontend origin
+  origin: {frontendURL}, // Adjust this to your frontend origin
   credentials: true
 }));
 app.use(express.json());
