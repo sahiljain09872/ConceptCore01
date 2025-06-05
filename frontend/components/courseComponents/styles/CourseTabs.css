@@ -1,0 +1,100 @@
+/* src/components/CourseTabs.css */
+
+.course-tabs {
+    margin-bottom: 32px;
+  }
+
+  .tabs-container {
+    display: flex;
+    /* background: white; */ /* Kept commented as per original */
+    border-radius: 12px;
+    padding: 8px; /* Padding around the tabs container */
+    padding-left:0;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */ /* Kept commented */
+    overflow-x: auto;
+    gap: 10px; /* Space between tab buttons */
+    flex-wrap: wrap;
+  }
+
+  .tab-button {
+    flex: 1; 
+    border: none;
+    border-radius: 8px;
+    background: #f0f0f0; /* Light grey background for normal state */
+    color: #535353; /* Darker text for better contrast on light grey */
+    font-size: 4px; /* Slightly smaller overall font size for the button */
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; /* Gap between label and count within the button */
+    max-width: 200px;
+    padding:8px 0;
+    margin-right:10px;
+    margin-bottom:20px;
+  }
+
+  .tab-button:hover {
+    background: #D8D8D8; /* Slightly darker grey on hover */
+    color: #222; /* Even darker text on hover for better contrast */
+  }
+
+  .tab-button.active {
+    background: #B8B8B8; /* Darker grey for active state */
+    color: #333; /* Dark text for active state */
+    font-weight: 600;
+  }
+
+  .tab-label {
+    font-size: 16px; /* Adjusted font size for the label */
+  }
+
+  .tab-count {
+    font-size: 11px; /* Adjusted font size for the count */
+    opacity: 0.8;
+  }
+
+  .tab-button.active .tab-count {
+    opacity: 1; /* Full opacity for count in active state */
+  }
+
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .tabs-container {
+      gap: 2px;
+    }
+
+    .tab-button {
+      min-width: 120px; /* Adjusted min-width for medium screens */
+      gap: 2px;
+    }
+
+    .tab-label {
+      font-size: 15px;
+    }
+
+    .tab-count {
+      font-size: 10px;
+    }
+  }
+
+  .category{
+    margin: 0;
+    color: #333;
+    font-size: 24px; /* Larger font size for 'Filters' */
+    font-weight: 700; /* Bolder font weight */
+    letter-spacing: -0.5px; /* Slight negative letter spacing as seen in image */
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 480px) {
+    .tab-button {
+      min-width: 100px; /* Further adjusted min-width for small screens */
+    }
+
+    .tab-label {
+      font-size: 15px;
+    }
+  }
