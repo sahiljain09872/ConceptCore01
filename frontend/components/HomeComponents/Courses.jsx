@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Math_Home from '../../src/assets/Math_Home.png';
-import Physics_Home from '../../src/assets/Science/physics5.png';
+import Physics_Home from '../../src/assets/Science/Physics5.png';
 import History_Home from '../../src/assets/History_Home.png';
 
 const cardVariants = {
