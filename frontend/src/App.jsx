@@ -10,7 +10,7 @@ import ContactUs from '../components/ContactUs';
 import CoursesPage from '../components/CoursesPage';
 import CourseDetailPage from '../components/CourseDetailPage';
 import ProfilePage from '../components/ProfilePage';
-import MyCoursesPage from '../components/MyCoursesPage.jsx';
+import MyCoursesPage from '../components/MycoursesPage.jsx';
 import CheckoutPage from '../components/CheckoutPage.jsx';  
 
 
