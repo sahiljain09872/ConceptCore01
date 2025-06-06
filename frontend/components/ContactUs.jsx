@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './Header'; // Make sure the path is correct
 import Footer from './Footer'; // Make sure the path is correct
 import linkedin from '../src/assets/linkedin.jpeg';
-import instagram from '../src/assets/instagram.jpeg'; // Placeholder for Instagram icon, replace with actual image path
+import instagram from '../src/assets/instagram.png'; // Placeholder for Instagram icon, replace with actual image path
 import { sendContactForm } from '../apis/contact';
 
 const ContactForm = () => {
